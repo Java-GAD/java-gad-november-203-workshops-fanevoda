@@ -1,6 +1,15 @@
 
 public class Main {
 
+    public static void printHalfTriangle(int height)
+    {
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < i + 1; j++)
+                System.out.print("* ");
+            System.out.print('\n');
+        }
+    }
     public static void printHallowPattern(int noOfRows, int noOfCols)
     {
         for (int i = 0; i < noOfCols; i++)
@@ -27,11 +36,13 @@ public class Main {
         {
             System.out.print('*');
         }
+        System.out.print('\n');
 
     }
 
     public static void main(String[] args) {
 
         printHallowPattern(5, 20);
+        printHalfTriangle(5);
     }
 }
